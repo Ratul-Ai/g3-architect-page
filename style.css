@@ -19,6 +19,21 @@ width: 75%;
 max-width: 1440px;
 margin: 0 auto;
 }
+.btn{
+  background: #FF900E;
+  color:#ffffff;
+  font-size: 20px;
+  font-weight:500;
+  border-radius: 8px;
+  padding:20px 25px;
+  border: none;
+  cursor: pointer;
+  transition:transform 0.3s ease,background 0.3s ease;
+}
+.btn:hover{
+  background:#f87001;
+  transform: translateY(-3px); 
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -84,22 +99,7 @@ margin: 0 auto;
   padding-bottom: 30px;
   padding-top: 25px;
 }
-.btn{
-  background: #FF900E;
-  color:#ffffff;
-  font-size: 20px;
-  font-weight:500;
-  border-radius: 8px;
-  padding:20px 25px;
-  border: none;
-  cursor: pointer;
-  transition:transform 0.3s ease,background 0.3s ease;
-}
-.btn:hover{
-  background:#f87001;
-  transform: translateY(-3px);
-  
-}
+
 .banner-image{
   display: flex;
   justify-content: center;
@@ -108,9 +108,59 @@ margin: 0 auto;
   width: 100%;
 }
 
+/* features */
+
+.upper-part{
+  display: flex;
+  justify-content:space-between;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.up-content{
+  max-width:537px;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  margin-left:80px;
+}
+.up-heading{
+  font-size:2.8rem;
+  color:rgba(114, 114, 114, 1);
+  line-height:1.1;
+  font-weight:500;
+
+}
+.of-our{
+  color: rgba(19, 19, 19, 1);
+  font-weight:700;
+}
+.orange-feature{
+  color:#FF900E;
+  font-weight:700;
+}
+.up-description{
+  font-size:1rem;
+  color:rgba(114, 114, 114, 1);
+  line-height: 1.6;
+  padding:25px 0;
+}
+.up-images{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+}
 @media screen and (max-width:576px){
+  .inner{
+width:90%;
+margin: 0 auto;
+}
   .logo{
     font-size:1.5rem;
+  }
+  .btn{
+    font-size: 1rem;
+    padding:12px;
   }
   .nav-menu{
     display: none;
@@ -125,4 +175,27 @@ margin: 0 auto;
     margin-top:50px;
     margin-bottom: 30px;
   }
+  .upper-part{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  gap:40px;
+}
+
+.up-images img{
+  width:100%;
+  margin:0 auto;
+}
+.up-heading {
+    font-size: 1.8rem;
+    text-align: center;
+}
+.up-content{
+  align-items:center;
+  margin:0 auto;
+}
+.up-description{
+  text-align: center;
+}
 }
