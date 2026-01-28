@@ -152,6 +152,9 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
+.feature-images img{
+  width: 100%;
+}
 
 /* experience part */
 
@@ -163,9 +166,12 @@ body {
 .exp div {
   flex: 1;
 }
+.exp-image img{
+  width: 100%;
+}
 .exp-cards {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns:1fr;
   place-items: center;
   gap: 20px;
 }
@@ -204,6 +210,7 @@ body {
   position: relative;
   left: -75px;
   bottom: 100px;
+  max-width: 342px;
 }
 .ten-year {
   font-size: 3rem;
@@ -224,9 +231,12 @@ body {
 .fact-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 100px;
+  place-items: center;
+  gap: 40px;
 }
 .fact-card {
+  width: 90%;
+  height: 90%;
   border: 1px solid rgba(255, 144, 14, 1);
   border-radius: 8px;
   display: flex;
